@@ -15,6 +15,8 @@ public class Main {
         c2.setNumero(90);
         c2.setSaldo(500.0);
 
+        Conta c3 = new Conta();
+
         System.out.println(c.getSaldo());
     }
 }
