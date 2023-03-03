@@ -16,6 +16,11 @@ public class Main {
         c2.setSaldo(500.0);
 
         Conta c3 = new Conta(0);
+        if (c.equals(c2)){
+            System.out.println("Conta ja criada");
+        }else {
+            System.out.println("Contas diferentes");
+        }
 
         System.out.println(
                 "numero conta c: " + c.getNumero() + "\n" +
