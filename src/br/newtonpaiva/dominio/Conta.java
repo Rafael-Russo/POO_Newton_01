@@ -1,5 +1,7 @@
 package br.newtonpaiva.dominio;
 
+import java.util.Objects;
+
 public class Conta {
     private Integer numero;
     private Double saldo;
@@ -54,4 +56,23 @@ public class Conta {
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Conta conta = (Conta) obj;
+        return Objects.equals(numero, conta.numero);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numero);
+    }
+
+    //    @Override
+//    public boolean equals(Object obj) {
+//        Conta c2 = (Conta) obj;
+//        return this.getNumero().equals(c2.getNumero());
+//    }
 }
