@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d0a317f-ccc4-44da-97c1-8d431a6eaffc" name="Changes" comment="feat: teste do branch backup">
+    <list default="true" id="9d0a317f-ccc4-44da-97c1-8d431a6eaffc" name="Changes" comment="feat: implementa construtores e equal e hashcode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/dominio/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/newtonpaiva/ui/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.newtonpaiva.ui.Main" />
-      <module name="lab02" />
+      <module name="aula_01" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.newtonpaiva.ui.*" />
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677884448526</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: implementa construtores e equal e hashcode">
+      <created>1677889344802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677889344817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +117,7 @@
     <MESSAGE value="feat: cria estrutura inicial" />
     <MESSAGE value="feat: cria a classe Conta" />
     <MESSAGE value="feat: teste do branch backup" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: teste do branch backup" />
+    <MESSAGE value="feat: implementa construtores e equal e hashcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa construtores e equal e hashcode" />
   </component>
 </project>
