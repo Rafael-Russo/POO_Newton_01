@@ -23,6 +23,9 @@ public class Conta {
     }
 
     public Double sacar(Double valor) {
+        if ((saldo - valor) < 0 || valor == null || valor <= 0) {
+            throw new IllegalArgumentException("Sem dinheiro suficiente na conta");
+        }
 
         saldo -= valor;
 
@@ -30,10 +33,22 @@ public class Conta {
     }
 
     public Double depositar(Double valor) {
+        if (valor == null || valor <= 0) {
+            throw new IllegalArgumentException("Valor menor que zero");
+        }
 
         saldo += valor;
 
         return saldo;
+    }
+
+    public void transferir(Conta destino, Double valor) {
+        if (this.equals(destino)) {
+            throw new IllegalArgumentException("Não é possivel transferir para essa conta");
+        }
+
+        this.sacar(valor);
+        destino.depositar(valor);
     }
 
     // Getter and Setter - Numero

@@ -22,6 +22,8 @@ public class Main {
             System.out.println("Contas diferentes");
         }
 
+        c.transferir(c2, 10.0);
+
         System.out.println(
                 "numero conta c: " + c.getNumero() + "\n" +
                         "saldo conta c: " + c.getSaldo() + "\n" +
