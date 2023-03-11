@@ -3,8 +3,8 @@ package br.newtonpaiva.dominio;
 import java.util.Objects;
 
 public class Conta {
-    private Integer numero;
-    private Double saldo;
+    protected Integer numero;
+    protected Double saldo;
 
     public Conta() {
         this.numero = null;

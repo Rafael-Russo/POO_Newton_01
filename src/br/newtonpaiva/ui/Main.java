@@ -1,6 +1,7 @@
 package br.newtonpaiva.ui;
 
 import br.newtonpaiva.dominio.Conta;
+import br.newtonpaiva.dominio.ContaEspecial;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,9 +17,9 @@ public class Main {
         c2.setSaldo(500.0);
 
         Conta c3 = new Conta(0);
-        if (c.equals(c2)){
+        if (c.equals(c2)) {
             System.out.println("Conta ja criada");
-        }else {
+        } else {
             System.out.println("Contas diferentes");
         }
 
@@ -32,5 +33,8 @@ public class Main {
                         "numero conta c3: " + c3.getNumero() + "\n" +
                         "saldo conta c3: " + c3.getSaldo()
         );
+
+//        exemplo de herança com (conta especial)
+        ContaEspecial ce = new ContaEspecial();
     }
 }
