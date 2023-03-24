@@ -50,6 +50,6 @@ public class Main {
 
         Pessoa p = pessoas[0];
 
-        System.out.println(p.getConta().getSaldo());
+        System.out.println(p.getContas());
     }
 }

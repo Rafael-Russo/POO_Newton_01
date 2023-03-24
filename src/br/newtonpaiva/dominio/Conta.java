@@ -4,7 +4,10 @@ import java.util.Objects;
 
 public class Conta {
     protected Integer numero;
+
     protected Double saldo;
+
+    private Pessoa pessoa;
 
     public Conta() {
         this.numero = null;

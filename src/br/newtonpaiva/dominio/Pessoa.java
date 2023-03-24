@@ -1,11 +1,12 @@
 package br.newtonpaiva.dominio;
 
+import java.util.List;
 import java.util.Objects;
 
 public abstract class Pessoa {
     private String nome;
 
-    private Conta conta;
+    private List contas;
 
     public String getNome() {
         return nome;
@@ -15,12 +16,12 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public Conta getConta() {
-        return conta;
+    public List getContas() {
+        return contas;
     }
 
-    public void setConta(Conta conta) {
-        this.conta = conta;
+    public void setContas(List contas) {
+        this.contas = contas;
     }
 
     @Override
